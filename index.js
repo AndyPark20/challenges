@@ -1,11 +1,13 @@
 
 let i=0;
-const increment = async()=>{
-  i+=await 2;
+const increment =()=>{
+  i+=2;
   console.log('outside function',i)
-  const incrementTwo = async()=>{
-    i+=await 3;
-    console.log('inside function', i);
+  const incrementTwo =()=>{
+    setTimeout(()=>{
+         i += 3;
+         console.log("inside function", i);
+    },3000)
   }
   incrementTwo();
 };
