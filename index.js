@@ -38,3 +38,5 @@ var myObject = {
   },
 };
 myObject.func();
+
+//func method will call a method that is currently attached to myObject called func. First the outer func console log will run, then the inner function will run.
